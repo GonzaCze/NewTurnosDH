@@ -10,7 +10,12 @@
         <!-- Bootstrap -->
         <link rel="stylesheet" href="/css/style.css">
         <style>
+          body{
+            background: #C2C3C5;
+            background: linear-gradient(to right,#8CA0C7,#C2C3C5);
+          }
 
+          
 
         </style>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,7 +27,7 @@
     <%- include('./partials/header.ejs')%>
         <div class="container w-75 mt-5 rounded shadow border border-3 ">
 
-            <div class="row align-items-stretch " style="background-color: #41416c">
+            <div class="row align-items-stretch " >
                 <div class="col bg d-none col-md-8 col-lg-6 col-xl-6 rounded ">
 
                 </div>
@@ -31,7 +36,7 @@
                     <div class="text-primary">
 
                     </div>
-
+                    <div class="col bg-white p-5 rounded-end">
                     <h2 class="fw-bold text-center pt-5 mb-5 " style="color: white">Inicia Sesion</h2>
 
                     <!-- LOGIN -->
@@ -55,13 +60,54 @@
                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
                           <label class="form-check-label" for="exampleCheck1" style="color: black;">Mantenerme conectado</label>
                         </div>
+                        <div class="d-grid">
                        <a href="/turnos/listado"> <input type="button" value="Iniciar Sesion" class="btn btn-primary"></input></a>
                       </form>
+                    </div>
 
-                    
+                    <div class="my -3">
+                      <span>No tienes cuenta? <a href="#">Regístrate</a></span> <br>
+                      <span> <a href="#">Recuperar Contraseña</a></span>
+                    </div>
+
+                    <!-- login con redes sociales-->
+                    <div class="container w-100 my-5">
+                      <div class="row text-center">
+                        <div class="col-12">Inciar Sesión con </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <button class="btn btn-outline-primary w-100 my-1">
+                            <div class="row align-items-center">
+                            <div class="col-2">
+                              <img src="/img/facebook-logo-3-1.png" width="32" alt="">
+                            </div>
+                            <div class="col-9 text-center">
+                              Facebook
+                            </div>
+                          </div>
+                          </button>
+                        </div>
+
+                        <div class="col">
+                          <button class="btn btn-outline-danger w-100 my-1">
+                            <div class="row align-items-center">
+                            <div class="col-2">
+                              <img src="/img/descarga.png" width="32" alt="">
+                            </div>
+                            <div class="col-9 text-center">
+                              Google
+                            </div>
+                          </div>
+                          </button>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
-
+            
         </div>
 
         </div>
